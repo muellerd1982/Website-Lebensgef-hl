@@ -592,7 +592,8 @@ h2.section-title em { font-style: normal; color: var(--sage); }
 }
 @media (max-width: 768px) {
   .problem-head { grid-template-columns: 1fr; gap: 24px; margin-bottom: 2rem; }
-  .problem-photo { min-height: 0; width: 160px; height: 160px; }
+  .problem-photo { min-height: 0; width: 160px; height: 240px; }
+  .problem-photo img { object-position: 50% 50%; }
 }
 .problem-list {
   display: grid;
