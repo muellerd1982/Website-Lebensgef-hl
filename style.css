@@ -568,6 +568,24 @@ h2.section-title em { font-style: normal; color: var(--sage); }
   max-width: 680px;
   margin-bottom: 2.5rem;
 }
+.problem-head {
+  display: grid;
+  grid-template-columns: 1fr minmax(240px, 340px);
+  gap: 48px;
+  align-items: center;
+  margin-bottom: 2.5rem;
+}
+.problem-head .problem-text { margin-bottom: 0; }
+.problem-photo {
+  aspect-ratio: 1 / 1;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.problem-photo img { object-position: 50% 38%; }
+@media (max-width: 768px) {
+  .problem-head { grid-template-columns: 1fr; gap: 24px; margin-bottom: 2rem; }
+  .problem-photo { aspect-ratio: 4 / 3; max-height: 320px; }
+}
 .problem-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
