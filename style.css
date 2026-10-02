@@ -2497,3 +2497,70 @@ footer {
   .blog-grid { grid-template-columns: repeat(2, 1fr); }
   .blog-grid--3 { grid-template-columns: repeat(2, 1fr); }
 }
+
+/* ── 42 Tage Neustart (vitalstoffkur.html) ── */
+.neustart-pills {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 1.6rem 0 1.2rem;
+  padding: 0;
+  max-width: 640px;
+}
+.neustart-pills li {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 14px 7px 8px;
+  border: 1px solid rgba(255,255,255,0.45);
+  border-radius: 999px;
+  font-size: 0.82rem;
+  color: #fff;
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(2px);
+}
+.neustart-pills li::before {
+  content: '✓';
+  width: 18px; height: 18px;
+  border-radius: 50%;
+  background: #fff;
+  color: var(--deep);
+  font-size: 0.68rem;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+}
+.page-hero p.neustart-claim {
+  display: block;
+  line-height: 1.3;
+  width: fit-content;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.35rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--deep);
+  background: #e8ddd6;
+  padding: 8px 22px;
+  border-radius: 6px;
+  margin: 0 0 1.8rem;
+}
+.neustart-folgen { grid-template-columns: repeat(2, 1fr); }
+.neustart-good-news {
+  max-width: 720px;
+  margin-top: 2.5rem;
+  padding: 22px 26px;
+  background: var(--warm-white);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.35rem;
+  line-height: 1.5;
+  color: var(--deep);
+}
+.neustart-good-news strong { color: var(--sage); font-weight: 600; }
+.neustart-bonus { background: var(--sage-pale); }
+@media (max-width: 760px) {
+  .neustart-folgen { grid-template-columns: 1fr; }
+  .page-hero p.neustart-claim { font-size: 1.1rem; padding: 7px 16px; }
+  .neustart-pills li { font-size: 0.76rem; }
+}
