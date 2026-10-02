@@ -2566,6 +2566,9 @@ footer {
 }
 
 /* ── R-auszeit (r-auszeit.html) ── */
+.page-hero.rauszeit-hero { padding-top: calc(var(--nav-h) + 48px); padding-bottom: 56px; }
+.rauszeit-hero h1 { font-size: clamp(2.4rem, 4.5vw, 4rem); margin: 10px 0 12px; }
+.rauszeit-hero .page-hero-privat { margin-bottom: 0; }
 .page-hero p.rauszeit-motto {
   font-family: 'Cormorant Garamond', serif;
   font-style: italic;
@@ -2625,7 +2628,11 @@ footer {
 }
 .rauszeit-gift strong { color: var(--gold-light); font-weight: 500; }
 @media (max-width: 600px) {
-  .rauszeit-facts { flex-direction: column; gap: 10px; }
+  .page-hero.rauszeit-hero { padding-top: calc(var(--nav-h) + 28px); padding-bottom: 36px; }
+  .page-hero p.rauszeit-motto { margin-bottom: 1.2rem; }
+  .rauszeit-facts { gap: 8px 16px; margin-bottom: 1.4rem; }
+  .rauszeit-facts li { font-size: 0.82rem; gap: 7px; }
+  .rauszeit-facts svg { width: 26px; height: 26px; padding: 5px; }
   .rauszeit-gift { flex-direction: column; align-items: flex-start; padding: 22px; }
   .rauszeit-gift p { font-size: 1.2rem; }
 }
