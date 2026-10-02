@@ -2564,3 +2564,27 @@ footer {
   .page-hero p.neustart-claim { font-size: 1.1rem; padding: 7px 16px; }
   .neustart-pills li { font-size: 0.76rem; }
 }
+
+/* ── Erstgespräch-Button in der Handy-Kopfzeile ── */
+.nav-cta-mobile { display: none; }
+@media (max-width: 768px) {
+  .nav-cta-mobile {
+    display: inline-flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 14px;
+    background: var(--gold);
+    color: var(--deep);
+    padding: 9px 13px;
+    border-radius: 2px;
+    font-size: 0.66rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    text-decoration: none;
+  }
+}
+@media (max-width: 400px) {
+  .nav-logo-text { font-size: 1.05rem !important; letter-spacing: 0.14em !important; }
+  .nav-cta-mobile { padding: 8px 10px; font-size: 0.6rem; margin-right: 10px; }
+}
