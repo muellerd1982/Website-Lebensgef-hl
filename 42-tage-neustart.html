@@ -35,6 +35,7 @@
     "@type": "Service",
     "name": "42 Tage Neustart",
     "description": "42 Tage begleitete Ernährungsumstellung: Vitalstoffreserven auffüllen, den Körper rundum versorgen und belastende Lebensmittel reduzieren.",
+    "offers": {"@type": "Offer", "price": "669", "priceCurrency": "EUR", "description": "Einführungspreis für die erste Runde (5 Plätze)"},
     "provider": {
       "@type": "LocalBusiness",
       "@id": "https://lebens-gefuehl.com/#business",
@@ -101,14 +102,16 @@
       <li>Gewicht reduzieren</li>
     </ul>
     <p class="neustart-claim">Nicht Diät, sondern Neustart!</p>
-    <a href="https://calendly.com/daniela-mueller-lebens-gefuehl/30-minuten-kennlern-gesprach-klon" target="_blank" rel="noopener" class="btn btn-primary">
-      Erstgespräch buchen
+    <p class="neustart-hero-price"><strong>Erste Runde: nur 5 Plätze</strong> · Einführungspreis 669 € <span>statt 999 €</span></p>
+    <a href="https://wa.me/4915141909700?text=NEUSTART" target="_blank" rel="noopener" class="btn btn-primary">
+      „NEUSTART“ per WhatsApp schreiben
       <svg class="btn-arrow" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
     </a>
     <div style="display:flex;align-items:center;gap:10px;margin-top:1.2rem;">
       <span style="color:#ffcf56;font-size:1rem;letter-spacing:2px;">★★★★★</span>
       <span style="font-size:0.82rem;color:rgba(255,255,255,0.75);">5,0 · 8 Google-Bewertungen</span>
     </div>
+    <p class="neustart-hero-alt">Lieber erst persönlich sprechen? <a href="https://calendly.com/daniela-mueller-lebens-gefuehl/30-minuten-kennlern-gesprach-klon" target="_blank" rel="noopener">Kostenloses Erstgespräch buchen</a></p>
     <p class="page-hero-privat">
       <span><strong>Privatleistung</strong> · Keine Abrechnung über Krankenkasse oder Rezept.</span>
     </p>
@@ -228,21 +231,71 @@
   </div>
 </section>
 
-<!-- LEISTUNGEN -->
+<!-- LERNEN -->
 <section class="content-section" style="background:var(--cream);">
   <div class="container-wide">
+    <div class="process-header">
+      <span class="section-label">Was du mitnimmst</span>
+      <h2>In 42 Tagen <em>lernst du …</em></h2>
+    </div>
+    <div class="process-grid">
+      <div class="process-step">
+        <span class="process-number">01</span>
+        <h3>… deinen Körper besser zu versorgen.</h3>
+        <p>Du verstehst, welche Rolle Makro- und Mikronährstoffe spielen und wie du sie im Alltag sinnvoll einsetzt.</p>
+      </div>
+      <div class="process-step">
+        <span class="process-number">02</span>
+        <h3>… deine Ernährung alltagstauglich zu verändern.</h3>
+        <p>Keine komplizierten Regeln, sondern konkrete Möglichkeiten, die auch in einen ganz normalen Alltag passen.</p>
+      </div>
+      <div class="process-step">
+        <span class="process-number">03</span>
+        <h3>… zu erkennen, was deinen Körper belastet.</h3>
+        <p>Du erfährst, welche Lebensmittel, Umwelteinflüsse und anderen Faktoren deinen Körper negativ beeinflussen können – und was dir stattdessen guttut.</p>
+      </div>
+      <div class="process-step">
+        <span class="process-number">04</span>
+        <h3>… Gewohnheiten aufzubauen, die bleiben dürfen.</h3>
+        <p>Denn nach den 42 Tagen soll nicht die nächste Diät beginnen, sondern dein neuer Alltag weitergehen.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LEISTUNGSPAKET -->
+<section class="content-section" style="background:var(--warm-white);">
+  <div class="container-wide">
     <span class="section-label">Das bekommst du</span>
-    <h2>So begleite ich dich <em>durch die 42 Tage</em></h2>
-    <ul class="check-list" style="max-width:720px;margin-top:2rem;">
-      <li>Begleitete Ernährungsumstellung über 42 Tage (Do's and Don'ts)</li>
-      <li>Gezielte Auffüllung deiner Mineralstoff- und Vitamindepots mit individueller Supplementierungsempfehlung</li>
-      <li>Qualitätsorientierte Produkt-Empfehlungen</li>
-      <li>Einkaufslisten, Rezeptideen &amp; praktische Tipps</li>
-      <li>Aufklärung über Nährstoffe &amp; Zusammenhänge</li>
-      <li>Anregungen zu Entspannungs- und Bewegungsmomenten sowie Anreize für ein gutes Stressmanagement</li>
-      <li>In Gruppen-Kursen (Januar, April oder September): ergänzende Workout-Videos</li>
-      <li>In einer One-to-One-Begleitung ganzjährig möglich</li>
+    <h2>Dein 42 Tage Neustart <em>beinhaltet</em></h2>
+    <ul class="check-list neustart-paket">
+      <li><span>Persönliches Start-Gespräch</span></li>
+      <li><span>Begleitung per WhatsApp während der 42 Tage</span></li>
+      <li><span>Handbuch zum Programm</span></li>
+      <li><span>Wöchentlicher Check-in</span></li>
+      <li><span>Ernährungsimpulse &amp; Rezepte</span></li>
+      <li><span>Anreize zu Bewegung &amp; Entspannung</span></li>
+      <li><span>Abschlussgespräch nach den 42 Tagen</span></li>
+      <li><span>Auf Wunsch: hochwertige Mineralstoffkomplexe zum Auffüllen deiner Vitalstoffspeicher</span></li>
     </ul>
+
+    <div class="neustart-offer">
+      <div class="neustart-offer-text">
+        <span class="neustart-offer-label">Einführungsangebot</span>
+        <h3>Sei bei der ersten Runde dabei!</h3>
+        <p>Ich starte dieses neue Programm und suche 5 Menschen, die die erste Runde gemeinsam mit mir erleben.</p>
+        <a href="https://wa.me/4915141909700?text=NEUSTART" target="_blank" rel="noopener" class="btn btn-primary">
+          „NEUSTART“ per WhatsApp schreiben
+          <svg class="btn-arrow" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+      <div class="neustart-offer-price">
+        <span class="neustart-offer-seats">Nur 5 Plätze</span>
+        <span class="neustart-offer-small">zum Einführungspreis von</span>
+        <span class="neustart-offer-amount">669 €</span>
+        <span class="neustart-offer-small">statt <s>999 €</s></span>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -335,8 +388,13 @@
       </details>
 
       <details class="faq-item">
-        <summary class="faq-question">Mache ich das allein oder in einer Gruppe?</summary>
-        <p class="faq-answer">Beides ist möglich: Gruppen-Kurse starten im Januar, April und September und enthalten ergänzende Workout-Videos. Eine One-to-One-Begleitung kannst du das ganze Jahr über beginnen.</p>
+        <summary class="faq-question">Was kostet der 42 Tage Neustart?</summary>
+        <p class="faq-answer">Für die erste Runde gilt ein Einführungspreis von 669 € statt 999 €. Dafür suche ich 5 Menschen, die das Programm als Erste mit mir erleben. Enthalten sind Start- und Abschlussgespräch, das Handbuch, Ernährungsimpulse &amp; Rezepte, wöchentliche Check-ins und meine Begleitung per WhatsApp.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-question">Wie melde ich mich an?</summary>
+        <p class="faq-answer">Schreib mir einfach „NEUSTART“ per WhatsApp an 0151 – 419 097 00. Ich melde mich bei dir, und wir klären alles Weitere. Wenn du vorher in Ruhe sprechen möchtest, buch dir gern ein kostenloses Erstgespräch.</p>
       </details>
 
       <details class="faq-item">
@@ -351,11 +409,11 @@
 <!-- CTA BANNER -->
 <section id="cta-banner">
   <div class="container-wide cta-banner-inner">
-    <span class="section-label cta-eyebrow">Kostenlos &amp; unverbindlich</span>
+    <span class="section-label cta-eyebrow">Nur 5 Plätze · Einführungspreis 669 €</span>
     <h2>Bereit für deinen<br><em>Neustart?</em></h2>
-    <p class="cta-sub">Im Erstgespräch schauen wir gemeinsam, wo du gerade stehst und wie deine 42 Tage aussehen können. Oder schreib mir direkt per WhatsApp: 0151-419 097 00.</p>
-    <a href="https://calendly.com/daniela-mueller-lebens-gefuehl/30-minuten-kennlern-gesprach-klon" target="_blank" rel="noopener" class="btn btn-primary">
-      Erstgespräch buchen
+    <p class="cta-sub">Schreib mir „NEUSTART“ per WhatsApp und sichere dir einen der 5 Plätze in der ersten Runde. Lieber erst sprechen? Dann buch dir ein kostenloses Erstgespräch.</p>
+    <a href="https://wa.me/4915141909700?text=NEUSTART" target="_blank" rel="noopener" class="btn btn-primary">
+      „NEUSTART“ per WhatsApp schreiben
       <svg class="btn-arrow" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
     </a>
   </div>

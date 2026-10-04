@@ -2685,3 +2685,66 @@ footer {
 }
 #cta-banner p.rauszeit-cta-big strong { color: var(--gold-light); font-weight: 600; }
 #cta-banner p.rauszeit-cta-big a { color: var(--gold-light); text-decoration: underline; text-underline-offset: 4px; white-space: nowrap; }
+
+/* ── 42 Tage Neustart: Preis, Leistungspaket, Angebot ── */
+.page-hero p.neustart-hero-price {
+  color: #fff;
+  font-size: 0.95rem;
+  margin: 0 0 1.4rem;
+}
+.page-hero p.neustart-hero-price strong { color: var(--gold-light); font-weight: 600; }
+.page-hero p.neustart-hero-price span { text-decoration: line-through; opacity: 0.7; }
+.page-hero p.neustart-hero-alt { font-size: 0.85rem; margin: 0.9rem 0 0; color: rgba(255,255,255,0.8); }
+.page-hero p.neustart-hero-alt a { color: #fff; text-decoration: underline; }
+.check-list.neustart-paket {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px 40px;
+  max-width: 900px;
+  margin-top: 2rem;
+}
+.neustart-offer {
+  margin-top: 48px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 40px 44px;
+  background: var(--deep);
+  color: var(--cream);
+  border-radius: 6px;
+}
+.neustart-offer-text { flex: 1; }
+.neustart-offer-label {
+  display: block;
+  font-size: 0.72rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold-light);
+  margin-bottom: 10px;
+}
+.neustart-offer h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 400;
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  margin: 0 0 12px;
+  color: #fff;
+}
+.neustart-offer p { color: rgba(253,246,251,0.82); line-height: 1.7; margin: 0 0 24px; max-width: 520px; }
+.neustart-offer-price {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-left: 40px;
+  border-left: 1px solid rgba(255,255,255,0.2);
+  white-space: nowrap;
+}
+.neustart-offer-seats { font-size: 0.85rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold-light); }
+.neustart-offer-small { font-size: 0.9rem; color: rgba(253,246,251,0.8); }
+.neustart-offer-amount { font-family: 'Cormorant Garamond', serif; font-size: 4rem; line-height: 1.05; color: #fff; }
+@media (max-width: 760px) {
+  .check-list.neustart-paket { grid-template-columns: 1fr; }
+  .neustart-offer { flex-direction: column-reverse; align-items: stretch; padding: 28px 22px; gap: 24px; }
+  .neustart-offer-price { padding-left: 0; border-left: 0; padding-bottom: 20px; border-bottom: 1px solid rgba(255,255,255,0.2); }
+  .neustart-offer .btn { width: 100%; justify-content: center; white-space: normal; text-align: center; }
+}
