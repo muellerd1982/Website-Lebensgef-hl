@@ -2776,3 +2776,23 @@ footer {
   .neustart-hero-right { padding: 22px 18px 18px; }
   .neustart-hero-right .btn { width: 100%; justify-content: center; text-align: center; white-space: normal; }
 }
+
+
+/* ── Plätze-Badge (42 Tage Neustart) – Text in 42-tage-neustart.html ändern ── */
+.seats-badge {
+  display: inline-flex; align-items: center; gap: 8px;
+  align-self: flex-start;
+  margin: 10px 0 12px;
+  padding: 7px 14px;
+  border-radius: 999px;
+  background: var(--gold); color: #2d1f2b;
+  font-size: 0.85rem; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase;
+  line-height: 1.2;
+  box-shadow: 0 0 0 0 rgba(255,207,86,0.6);
+  animation: seats-glow 2.2s ease-out infinite;
+}
+.page-hero p.neustart-hero-price .seats-badge { text-decoration: none; opacity: 1; }
+.seats-dot { width: 8px; height: 8px; border-radius: 50%; background: #c0392b; flex: 0 0 auto; animation: seats-pulse 1.6s ease-in-out infinite; }
+@keyframes seats-pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.3; } }
+@keyframes seats-glow { 0% { box-shadow: 0 0 0 0 rgba(255,207,86,0.55); } 70%,100% { box-shadow: 0 0 0 12px rgba(255,207,86,0); } }
+@media (prefers-reduced-motion: reduce) { .seats-badge, .seats-dot { animation: none; } }
